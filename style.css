@@ -1,0 +1,96 @@
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/*===================================*/
+html {
+    text-rendering: optimizeLegibility;
+}
+#add-film-form {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#add-film-title-container, #add-film-year-container, #add-film-submit {
+    margin: 5px;
+}
+
+#add-film-title-container input, #add-film-year-container input, #add-film-submit button{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    outline: none;
+}
+
+.film-container {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 5px auto
+}
+
+.films-list {
+    display: flex;
+}
+
+.star-item {
+    display: inline-block;
+}
+
+.star-item:after {
+    content: "\f005";
+    cursor: pointer;
+    font-family: FontAwesomeSol;
+}
+
+.star-item.active {
+    color: yellow;
+}
+
+input[name="film-title"] {
+    min-width: 200px;
+}
+
+input[name="film-year"] {
+    min-width: 100px;
+}
+
+#add-film-submit button {
+    min-width: 60px;
+}
+
+/*@font-face {*/
+/*    font-family: 'FontAwesomeReg';*/
+/*    font-style: normal;*/
+/*    font-display: auto;*/
+/*    src: url("./fonts/fa-regular-400.eot");*/
+/*    src: url("./fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),*/
+/*    url("./fonts/fa-regular-400.woff2") format("woff2"),*/
+/*    url("./fonts/fa-regular-400.woff") format("woff"),*/
+/*    url("/fonts/fa-regular-400.ttf") format("truetype"),*/
+/*    url("./fonts/fa-regular-400.svg#fontawesome") format("svg");*/
+/*}*/
+@font-face {
+    font-family: 'FontAwesomeSol';
+    font-style: normal;
+    font-display: auto;
+    src: url("./fonts/fa-solid-900.eot");
+    src: url("./fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/fa-solid-900.woff2") format("woff2"),
+    url("./fonts/fa-solid-900.woff") format("woff"),
+    url("/fonts/fa-solid-900.ttf") format("truetype");
+}
